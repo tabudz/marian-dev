@@ -242,12 +242,6 @@ typedef struct internal_state {
     uInt sym_next;      /* running index in sym_buf */
     uInt sym_end;       /* symbol table full when sym_next reaches this */
 
-    ushf *d_buf;
-    /* Buffer for distances. To simplify the code, d_buf and l_buf have
-     * the same number of elements. To use different lengths, an extra flag
-     * array would be necessary.
-     */
-
     ulg opt_len;        /* bit length of current block with optimal trees */
     ulg static_len;     /* bit length of current block with static trees */
     uInt matches;       /* number of string matches in current block */
